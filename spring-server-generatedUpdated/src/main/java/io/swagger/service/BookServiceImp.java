@@ -30,17 +30,17 @@ public class BookServiceImp implements BookService {
     }
 
     @Override
-    public Book findById(String id) {
-        return bookRepository.findOne(id);
+    public Book findById(String isbn) {
+        return bookRepository.findOne(isbn);
     }
 
     @Override
-    public void updateBook(Book book) {
+    public void updateBook(Book book, String id) {
         bookRepository.save(book);
     }
 
     @Override
-    public void updateBookIsbn(Book book, String isbn) {
+    public void updateBookIsbn(String isbn, Book book) {
         bookRepository.save(book);
     }
 

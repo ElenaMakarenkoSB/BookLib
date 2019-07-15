@@ -26,8 +26,6 @@ import java.util.List;
 @Api(value = "book", description = "the book API")
 public interface BookApi {
 
-<<<<<<< Updated upstream
-=======
     @ApiOperation(value = "Find all Book", nickname = "getBooks", notes = "Returns Books", response = Book.class, authorizations = {
             @Authorization(value = "api_key")
     }, tags={ "bookLib", })
@@ -37,7 +35,6 @@ public interface BookApi {
             method = RequestMethod.GET)
     ResponseEntity<List<Book>> getBooks();
 
->>>>>>> Stashed changes
     @ApiOperation(value = "Add a new book to the library", nickname = "addBook", notes = "", authorizations = {
         @Authorization(value = "petstore_auth", scopes = {
             @AuthorizationScope(scope = "write:pets", description = "modify pets in your account"),
@@ -79,23 +76,23 @@ public interface BookApi {
         produces = { "application/json" }, 
         method = RequestMethod.GET)
     ResponseEntity<Book> getBookById(@ApiParam(value = "ID of book to return",required=true) @PathVariable("bookId") String isbn);
-
-
-    @ApiOperation(value = "Update an existing book description", nickname = "updateBook", notes = "", authorizations = {
-        @Authorization(value = "petstore_auth", scopes = {
-            @AuthorizationScope(scope = "write:pets", description = "modify pets in your account"),
-            @AuthorizationScope(scope = "read:pets", description = "read your books")
-            })
-    }, tags={ "book", })
-    @ApiResponses(value = { 
-        @ApiResponse(code = 400, message = "Invalid ID supplied"),
-        @ApiResponse(code = 404, message = "Book not found"),
-        @ApiResponse(code = 405, message = "Validation exception") })
-    @RequestMapping(value = "/updateBook",
-        produces = { "application/json", "application/xml" }, 
-        consumes = { "application/json", "application/xml" },
-        method = RequestMethod.PUT)
-    ResponseEntity<Void> updateBook(@ApiParam(value = "Book object that needs to be added to the store" ,required=true )  @Valid @RequestBody Book body);
+//
+//
+//    @ApiOperation(value = "Update an existing book description", nickname = "updateBook", notes = "", authorizations = {
+//        @Authorization(value = "petstore_auth", scopes = {
+//            @AuthorizationScope(scope = "write:pets", description = "modify pets in your account"),
+//            @AuthorizationScope(scope = "read:pets", description = "read your books")
+//            })
+//    }, tags={ "book", })
+//    @ApiResponses(value = {
+//        @ApiResponse(code = 400, message = "Invalid ID supplied"),
+//        @ApiResponse(code = 404, message = "Book not found"),
+//        @ApiResponse(code = 405, message = "Validation exception") })
+//    @RequestMapping(value = "/updateBook",
+//        produces = { "application/json", "application/xml" },
+//        consumes = { "application/json", "application/xml" },
+//        method = RequestMethod.PUT)
+//    ResponseEntity<Void> updateBook(@ApiParam(value = "Book object that needs to be added to the store" ,required=true )  @Valid @RequestBody Book body);
 
 
     @ApiOperation(value = "Update an existing book description", nickname = "updateBook", notes = "", authorizations = {

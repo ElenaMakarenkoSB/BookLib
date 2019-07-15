@@ -4,11 +4,10 @@ import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import org.springframework.data.annotation.Id;
 import org.springframework.validation.annotation.Validated;
-import javax.validation.Valid;
+
 import javax.validation.constraints.*;
 
 /**
@@ -19,7 +18,7 @@ import javax.validation.constraints.*;
 
 public class Book   {
   @JsonProperty("isbn")
-  private Integer isbn = null;
+  private String isbn = null;
 
   @Id
   @JsonProperty("title")
@@ -70,7 +69,7 @@ public class Book   {
   @JsonProperty("status")
   private StatusEnum status = null;
 
-  public Book isbn(Integer isbn) {
+  public Book isbn(String isbn) {
     this.isbn = isbn;
     return this;
   }
@@ -82,11 +81,11 @@ public class Book   {
   @ApiModelProperty(value = "")
 
 
-  public Integer getIsbn() {
+  public String getIsbn() {
     return isbn;
   }
 
-  public void setIsbn(Integer isbn) {
+  public void setIsbn(String isbn) {
     this.isbn = isbn;
   }
 

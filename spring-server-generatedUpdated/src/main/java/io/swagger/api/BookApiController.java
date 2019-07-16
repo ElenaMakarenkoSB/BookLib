@@ -45,7 +45,6 @@ public class BookApiController implements BookApi {
     public ResponseEntity<List<Book>> getBooks() {
         System.out.println("Loading books...");
         List<Book> books = bookService.findAll();
-        System.out.println("books..." + bookService.findAll());
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
             try {
@@ -75,7 +74,7 @@ public class BookApiController implements BookApi {
         String accept = request.getHeader("Accept");
         System.out.println("Getting Book with isbn... " + isbn);
         Book book = bookService.findById(isbn);
-        System.out.println(" Book found... " + book);
+        System.out.println("Book found... " + book);
         if (accept != null && accept.contains("application/json")) {
             try {
                 return new ResponseEntity(bookService.findById(isbn), HttpStatus.OK);
@@ -87,27 +86,24 @@ public class BookApiController implements BookApi {
 
         return new ResponseEntity<Book>(HttpStatus.OK);
     }
-//TODO: body.getIsbn()-should return id, not isbn???
-//    public ResponseEntity<Void> updateBook(@ApiParam(value = "Book object that needs to be added to the store", required = true) @Valid @RequestBody Book body) {
-//        String accept = request.getHeader("Accept");
-//        System.out.println("Updating Book... " + body.getTitle());
-//        Book book = bookService.findById(body.getIsbn());
-//        if (book == null) {
-//            System.out.println("book not found");
-//            return new ResponseEntity(HttpStatus.NOT_FOUND);
-//        } else bookService.updateBook(body, body.getIsbn());
-//        return new ResponseEntity<Void>(HttpStatus.OK);
-//    }
 
-    public ResponseEntity<Void> updateBookIsbn(@ApiParam(value = "Book object that needs to be added to the store", required = true)@PathVariable("bookId") String isbn, @Valid @RequestBody Book body) {
+    public ResponseEntity<Book> updateBook(@ApiParam(value = "Book object that needs to be added to the store", required = true) @Valid @RequestBody Book body) {
+
         String accept = request.getHeader("Accept");
-        System.out.println("Updating Book's isbn... " + body.getTitle());
-        Book book = bookService.findById(isbn);
+        System.out.println("Updating Book... " + body.getTitle());
+        return new ResponseEntity(bookService.updateBook(body), HttpStatus.OK);
+    }
+
+    public ResponseEntity<Book> updatePartially(@ApiParam(value = "Book object that needs to be added to the store", required = true) @PathVariable("bookId") String id, @Valid @RequestBody Book body) {
+        String accept = request.getHeader("Accept");
+        System.out.println("Updating Book's title... " + body.getId());
+        Book book = bookService.findById(id);
         if (book == null) {
             System.out.println("book not found");
             return new ResponseEntity(HttpStatus.NOT_FOUND);
-        } else bookService.updateBookIsbn(isbn, body);
+        }
+        Book newBook = bookService.updatePartially(body, id);
 
-        return new ResponseEntity<Void>(HttpStatus.OK);
+        return new ResponseEntity<Book>(newBook, HttpStatus.OK);
     }
 }

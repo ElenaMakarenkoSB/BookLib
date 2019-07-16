@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdd1a569-216a-45e6-8de7-f3094bffc86d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/swagger/api/BookApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/swagger/api/BookApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/swagger/api/BookApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/swagger/api/BookApiController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/swagger/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/swagger/model/ModelApiResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/swagger/model/ModelApiResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/swagger/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/swagger/repository/BookRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/swagger/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/swagger/service/BookService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/swagger/service/BookServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/swagger/service/BookServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swagger-spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/swagger-spring.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/api/BookApiController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="90" selection-start-line="90" selection-start-column="2" selection-end-line="99" selection-end-column="7" />
+            <state relative-caret-position="943">
+              <caret line="96" column="4" selection-start-line="96" selection-start-column="4" selection-end-line="96" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -46,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/service/BookServiceImp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+            <state relative-caret-position="363">
+              <caret line="55" column="30" lean-forward="true" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#571#572#0" expanded="true" />
@@ -59,29 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/api/BookApi.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-157">
-              <caret line="78" selection-start-line="78" selection-end-line="95" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/service/BookService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="289">
+              <caret line="17" column="20" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -90,22 +67,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/model/Book.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/api/BookApi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="74" column="3" selection-start-line="74" selection-start-column="3" selection-end-line="74" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/repository/BookRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="652">
+              <caret line="112" lean-forward="true" selection-start-line="111" selection-start-column="150" selection-end-line="112" />
             </state>
           </provider>
         </entry>
@@ -127,10 +92,10 @@
         <option value="$PROJECT_DIR$/src/main/java/io/swagger/model/ModelApiResponse.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/io/swagger/model/Book.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/swagger/service/BookService.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/swagger/service/BookServiceImp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/io/swagger/api/BookApiController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/swagger/service/BookService.java" />
         <option value="$PROJECT_DIR$/src/main/java/io/swagger/api/BookApi.java" />
+        <option value="$PROJECT_DIR$/src/main/java/io/swagger/api/BookApiController.java" />
       </list>
     </option>
   </component>
@@ -291,10 +256,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8516000" />
+    <option name="totallyTimeSpent" value="17818000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26701966" />
@@ -307,7 +272,7 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.40425533" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.07855974" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -319,7 +284,7 @@
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="14" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -332,7 +297,7 @@
       <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26701966" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26701966" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -342,19 +307,19 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.40425533" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.3420622" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50075644" side_tool="true" weight="0.40425533" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="14" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -381,6 +346,48 @@
     <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/model/ModelApiResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1282">
+          <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/model/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+          <folding>
+            <element signature="e#671#672#0" expanded="true" />
+            <element signature="e#705#706#0" expanded="true" />
+            <element signature="e#727#728#0" expanded="true" />
+            <element signature="e#1103#1104#0" expanded="true" />
+            <element signature="e#1135#1136#0" expanded="true" />
+            <element signature="e#1196#1197#0" expanded="true" />
+            <element signature="e#1238#1239#0" expanded="true" />
+            <element signature="e#1726#1727#0" expanded="true" />
+            <element signature="e#1747#1748#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="60" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/service/BookService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/repository/BookRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -391,34 +398,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/model/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="74" column="3" selection-start-line="74" selection-start-column="3" selection-end-line="74" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/model/ModelApiResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1282">
-          <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/api/BookApiController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="90" selection-start-line="90" selection-start-column="2" selection-end-line="99" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/service/BookServiceImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+        <state relative-caret-position="363">
+          <caret line="55" column="30" lean-forward="true" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#571#572#0" expanded="true" />
@@ -429,27 +412,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/api/BookApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+        <state relative-caret-position="652">
+          <caret line="112" lean-forward="true" selection-start-line="111" selection-start-column="150" selection-end-line="112" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/service/BookService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/api/BookApiController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="943">
+          <caret line="96" column="4" selection-start-line="96" selection-start-column="4" selection-end-line="96" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/io/swagger/api/BookApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-157">
-          <caret line="78" selection-start-line="78" selection-end-line="95" />
         </state>
       </provider>
     </entry>

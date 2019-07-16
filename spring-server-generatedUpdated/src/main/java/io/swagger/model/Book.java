@@ -17,10 +17,22 @@ import javax.validation.constraints.*;
 @javax.annotation.Generated(value = "io.swagger.codegen.languages.SpringCodegen", date = "2019-07-04T12:30:58.278Z")
 
 public class Book   {
+ @Id
+ @JsonProperty("id")
+ private String id = null;
+
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
   @JsonProperty("isbn")
   private String isbn = null;
 
-  @Id
+
   @JsonProperty("title")
   private String title = null;
 
@@ -37,7 +49,7 @@ public class Book   {
    * book availability in the store
    */
   public enum StatusEnum {
-    AVAILABLE("available"),
+      AVAILABLE("available"),
     
     PENDING("pending"),
     

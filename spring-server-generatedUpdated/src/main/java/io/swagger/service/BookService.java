@@ -1,6 +1,7 @@
 package io.swagger.service;
 
 import io.swagger.model.Book;
+import io.swagger.model.ModelApiResponse;
 
 import java.util.List;
 
@@ -14,7 +15,7 @@ public interface BookService {
 
     Book findById(String isbn);
 
-    void updateBook(Book book, String id);
+    ModelApiResponse updateBook(Book book);
 
-    void updateBookIsbn(String isbn, Book book);
+    Book updatePartially(Book book, String id);
 }

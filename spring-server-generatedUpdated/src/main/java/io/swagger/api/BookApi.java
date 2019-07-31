@@ -31,12 +31,7 @@ public interface BookApi {
             method = RequestMethod.GET)
     ResponseEntity<List<Book>> getBooks();
 
-    @ApiOperation(value = "Add a new book to the library", nickname = "addBook", notes = "", authorizations = {
-            @Authorization(value = "petstore_auth", scopes = {
-                    @AuthorizationScope(scope = "write:pets", description = "modify pets in your account"),
-                    @AuthorizationScope(scope = "read:pets", description = "read your books")
-            })
-    }, tags = {"book",})
+    @ApiOperation(value = "Add a new book to the library", nickname = "addBook", notes = "", tags = {"book",})
     @ApiResponses(value = {
             @ApiResponse(code = 405, message = "Invalid input")})
     @RequestMapping(value = "/addBook",
@@ -55,7 +50,7 @@ public interface BookApi {
     @ApiResponses(value = {
             @ApiResponse(code = 400, message = "Invalid ID supplied"),
             @ApiResponse(code = 404, message = "Book not found")})
-    @RequestMapping(value = "/deleteBook/{bookId}",
+    @RequestMapping(value = "/deleteBook/book/{bookId}",
             produces = {"application/json", "application/xml"},
             method = RequestMethod.DELETE)
     ResponseEntity<Void> deleteBook(@ApiParam(value = "Book id to delete", required = true) @PathVariable("bookId") String isbn, @ApiParam(value = "") @RequestHeader(value = "api_key", required = false) String apiKey);
@@ -68,7 +63,7 @@ public interface BookApi {
             @ApiResponse(code = 200, message = "successful operation", response = Book.class),
             @ApiResponse(code = 400, message = "Invalid ID supplied"),
             @ApiResponse(code = 404, message = "Book not found")})
-    @RequestMapping(value = "/getBook/{bookId}",
+    @RequestMapping(value = "/book/{bookId}",
             produces = {"application/json"},
             method = RequestMethod.GET)
     ResponseEntity<Book> getBookById(@ApiParam(value = "ID of book to return", required = true) @PathVariable("bookId") String isbn);
@@ -84,7 +79,7 @@ public interface BookApi {
             @ApiResponse(code = 400, message = "Invalid ID supplied"),
             @ApiResponse(code = 404, message = "Book not found"),
             @ApiResponse(code = 405, message = "Validation exception")})
-    @RequestMapping(value = "/updateBook",
+    @RequestMapping(value = "/book",
             produces = {"application/json", "application/xml"},
             consumes = {"application/json", "application/xml"},
             method = RequestMethod.PUT)
@@ -101,7 +96,7 @@ public interface BookApi {
             @ApiResponse(code = 400, message = "Invalid ID supplied"),
             @ApiResponse(code = 404, message = "Book not found"),
             @ApiResponse(code = 405, message = "Validation exception")})
-    @RequestMapping(value = "/{bookId}",
+    @RequestMapping(value = "/book/{bookId}",
             produces = {"application/json", "application/xml"},
             consumes = {"application/json", "application/xml"},
             method = RequestMethod.PATCH)

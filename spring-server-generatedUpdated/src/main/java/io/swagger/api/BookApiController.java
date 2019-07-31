@@ -21,7 +21,7 @@ import java.util.List;
 @Controller
 public class BookApiController implements BookApi {
     @Autowired
-    BookService bookService;
+    private BookService bookService;
 
     private static final Logger log = LoggerFactory.getLogger(BookApiController.class);
 
@@ -37,7 +37,7 @@ public class BookApiController implements BookApi {
 
     public ResponseEntity<Void> addBook(@ApiParam(value = "Book object that needs to be added to the store", required = true) @Valid @RequestBody Book body) {
         String accept = request.getHeader("Accept");
-        System.out.println("Adding Book... " + body.getTitle());
+        log.info("Adding book with title [{}]", body.getTitle());
         bookService.addBook(body);
         return new ResponseEntity(body, HttpStatus.OK);
     }
@@ -60,10 +60,10 @@ public class BookApiController implements BookApi {
 
     public ResponseEntity<Void> deleteBook(@ApiParam(value = "Book id to delete", required = true) @PathVariable("bookId") String isbn, @ApiParam(value = "") @RequestHeader(value = "api_key", required = false) String apiKey) {
         String accept = request.getHeader("Accept");
-        System.out.println("Deleting Book... " + isbn);
+        log.info("Deleting book ...");
         Book book = bookService.findById(isbn);
         if (book == null) {
-            System.out.println("book not found");
+            log.info("book with id %s not found", book.getId());
             return new ResponseEntity(HttpStatus.NOT_FOUND);
         } else bookService.deleteBookByIsbn(isbn);
 
@@ -72,9 +72,9 @@ public class BookApiController implements BookApi {
 
     public ResponseEntity<Book> getBookById(@ApiParam(value = "ID of book to return", required = true) @PathVariable("bookId") String isbn) {
         String accept = request.getHeader("Accept");
-        System.out.println("Getting Book with isbn... " + isbn);
+        log.info("Getting book with isbn.."+ isbn);
         Book book = bookService.findById(isbn);
-        System.out.println("Book found... " + book);
+        log.info("Book found..." + book);
         if (accept != null && accept.contains("application/json")) {
             try {
                 return new ResponseEntity(bookService.findById(isbn), HttpStatus.OK);

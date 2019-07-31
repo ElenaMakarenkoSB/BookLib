@@ -4,10 +4,10 @@ import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
-import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import org.springframework.data.annotation.Id;
 import org.springframework.validation.annotation.Validated;
-import javax.validation.Valid;
+
 import javax.validation.constraints.*;
 
 /**
@@ -17,8 +17,21 @@ import javax.validation.constraints.*;
 @javax.annotation.Generated(value = "io.swagger.codegen.languages.SpringCodegen", date = "2019-07-04T12:30:58.278Z")
 
 public class Book   {
+ @Id
+ @JsonProperty("id")
+ private String id = null;
+
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
   @JsonProperty("isbn")
-  private Integer isbn = null;
+  private String isbn = null;
+
 
   @JsonProperty("title")
   private String title = null;
@@ -36,7 +49,7 @@ public class Book   {
    * book availability in the store
    */
   public enum StatusEnum {
-    AVAILABLE("available"),
+      AVAILABLE("available"),
     
     PENDING("pending"),
     
@@ -68,7 +81,7 @@ public class Book   {
   @JsonProperty("status")
   private StatusEnum status = null;
 
-  public Book isbn(Integer isbn) {
+  public Book isbn(String isbn) {
     this.isbn = isbn;
     return this;
   }
@@ -80,11 +93,11 @@ public class Book   {
   @ApiModelProperty(value = "")
 
 
-  public Integer getIsbn() {
+  public String getIsbn() {
     return isbn;
   }
 
-  public void setIsbn(Integer isbn) {
+  public void setIsbn(String isbn) {
     this.isbn = isbn;
   }
 
